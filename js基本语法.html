@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js基本语法</title>
+	<script type="text/javascript">
+		// 变量定义
+		var a = 123;
+		var b = 'abc';
+		var c = true;
+		var dd;
+		// alert(dd);
+		window.onload = function(){
+			document.getElementById('div1').title = '哈哈';
+			document.getElementById('link1').href = 'http://www.baidu.com';
+			document.getElementById('link1').title = 'http://www.baidu.com'
+			var oA = document.getElementById('link1');
+			alert(oA.title);
+
+		}
+	</script>
+</head>
+<body>
+	<div id="div1" title="div元素">这是一个div元素</div>
+	<a href="#" id="link1">百度网</a>
+</body>
+</html>

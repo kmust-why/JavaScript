@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function aa(a,b){
+				alert('我的this'+this+'我的a是');
+			}
+//			aa.call('abc',1,2);
+			aa.apply('abc',[1,2]);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

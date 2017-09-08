@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function Person(name, age, job){
+				var o = new Object();// 创建一个空对象
+				o.name = name;
+				o.age = age;
+				o.job = job;
+				o.showname = function(){
+					alert(this.name);
+				};
+				o.showage = function(){
+					alert(this.age);
+				};
+				return o;
+			}
+			var tom = Person('tom',18,'python');
+			tom.showage();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

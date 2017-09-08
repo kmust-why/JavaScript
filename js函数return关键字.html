@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oinput3 = document.getElementById('input3');
+			var oinput1 = document.getElementById('input1');
+			var oinput2 = document.getElementById('input2');
+			var oinput4 = document.getElementById('input4');
+			oinput3.onclick = function(){
+				
+				// var res = int(oinput1.value) + (oinput2.value);
+				// oinput4.value = res;
+				// oinput4.value = oinput1.value;
+				var val01 = oinput1.value;
+				var val02 = oinput2.value;
+				var res =  add(val01,val02);
+				oinput4.value = res;
+			}
+
+			function add(a, b){
+				var res = parseInt(a) + parseInt(b);
+				return res;
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" name="" id="input1">
+	<input type="text" name="" id="input2">
+	<input type="button" name="" id="input3" value="相加">
+	<input type="text" name="" id="input4">
+</body>
+</html>

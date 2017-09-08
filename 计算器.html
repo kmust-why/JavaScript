@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var oData1 = document.getElementById('data1');
+				var oOperate = document.getElementById('list1');
+				var oData2 = document.getElementById('data2');
+				var oBtn = document.getElementById('btn');
+				oBtn.onclick = function(){
+//					var res = 0;
+//					alert(oOperate.innerHTML);
+//					alert(oData1.value);
+//					alert(oData2.value);
+//					alert(oOperate.value);
+					var res = 0;
+//					if (isNaN(oData1.value) || isNaN(oData2.value)){
+//						alert(
+//					}
+					var aa = oData1.value;
+					var bb = oData2.value;
+					if (aa=="" || bb=="") {
+						alert('输入的内容不能为空');
+						return;
+					}
+					if (isNaN(aa) || isNaN(bb)) {
+						alert('不能输入字母');
+						return;
+					}
+					switch (oOperate.value){
+						case '0':
+							res = aa + bb;
+							alert(res);
+							break;
+						case '1':
+							res = aa - bb;
+							alert(res);
+							break;
+						case '2':
+							res = aa * bb;
+							alert(res);
+							break;
+						case '3':
+							res = aa / bb;
+							alert(res);
+							break;
+						default:
+							break;
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" name="" id="data1" value="" />
+		<select name="" id="list1">
+			<option value="0">+</option>
+			<option value="1">-</option>
+			<option value="2">*</option>
+			<option value="3">/</option>
+		</select>
+		<input type="text" name="" id="data2" value="" />
+		<input type="button" name="" id="btn" value="计算" />
+	</body>
+</html>

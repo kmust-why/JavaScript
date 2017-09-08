@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function Fclass(name,age){
+				this.age = age;
+				this.name = name;
+			}
+			Fclass.prototype.showname = function(){
+				alert(this.name;)
+			};
+			Fclass.prototype.showage = function(){
+				alert(this.age;)
+			};
+			function Sclass(name,age,job){
+				// 继承属性
+				Fclass.call(this,name,age);
+				this.job = job;
+			}
+			// 方法继承
+			Sclass.prototype = new Fclass();
+			Sclass.prototype.showobj = function(){
+				alert(this.job);
+			};
+			var ss = new Sclass('李四',56,'python');
+			ss.showname();
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

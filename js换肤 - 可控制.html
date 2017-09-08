@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="1.css" id="link1">
+	<script type="text/javascript">
+		function aa(){
+			var oLink = document.getElementById('link1');
+			oLink.href = '1.css';
+		}
+		function bb(){
+			var oLink = document.getElementById('link1');
+			oLink.href = '2.css';
+		}
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="皮肤01" onclick="aa();">
+	<input type="button" name="" value="皮肤02" onclick="bb();">
+	<div class="box1"></div>
+	<div class="box2"></div>
+</body>
+</html>
